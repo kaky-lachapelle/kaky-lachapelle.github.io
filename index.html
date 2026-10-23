@@ -183,6 +183,44 @@
       margin-bottom: 0.55rem;
     }
     .edu strong { color: var(--text); font-weight: 600; }
+    .testimonial {
+      padding: clamp(1.1rem, 4vw, 1.75rem);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0.75rem;
+      background: var(--surface);
+    }
+    .testimonial blockquote {
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .testimonial blockquote p + p { margin-top: 0.85rem; }
+    .testimonial figcaption {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .testimonial-author { display: block; font-weight: 600; }
+    .testimonial-role, .testimonial-note {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .testimonial-note { margin-top: 0.5rem; }
+    .testimonial-source {
+      display: inline-block;
+      margin-top: 0.65rem;
+      color: var(--accent);
+      font-size: 0.85rem;
+      text-underline-offset: 0.2em;
+      overflow-wrap: anywhere;
+    }
+    .testimonial-source:hover { text-decoration-thickness: 2px; }
+    .testimonial-source:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
     .gallery {
       display: flex;
       flex-wrap: nowrap;
@@ -393,6 +431,33 @@
           <li data-lang="en">Automated cash-desk reporting across millions of database rows, making information available in seconds instead of days (SMMEC).</li>
         </ul>
       </article>
+    </section>
+
+    <section id="recommandation">
+      <h2 data-lang="fr">Recommandation LinkedIn</h2>
+      <h2 data-lang="en">LinkedIn recommendation</h2>
+      <figure class="testimonial">
+        <blockquote cite="https://www.linkedin.com/in/kaky-jean-philippe-lachapelle/" lang="fr" data-lang="fr">
+          <p>J’ai eu le plaisir de travailler avec Káky pendant un an. En tant que développeur Full Stack, il s’est rapidement distingué par son autonomie et sa bonne intégration dans notre équipe technique distribuée.</p>
+          <p>Kaky a notamment piloté un chantier de migration backend, prenant des initiatives et apportant des solutions en autonomie.</p>
+          <p>Son rôle de relais auprès du reste de l’équipe a été précieux grâce à ses qualités de communication.</p>
+          <p>Je le recommande vivement pour son expertise technique, son autonomie et sa capacité à créer une dynamique collaborative positive.</p>
+        </blockquote>
+        <blockquote cite="https://www.linkedin.com/in/kaky-jean-philippe-lachapelle/" lang="en" data-lang="en">
+          <p>I had the pleasure of working with Kaky for a year. As a Full Stack developer, he quickly stood out for his autonomy and how well he integrated into our distributed technical team.</p>
+          <p>Kaky notably led a backend migration project, taking initiative and independently providing solutions.</p>
+          <p>His role as a point of contact for the rest of the team was valuable thanks to his communication skills.</p>
+          <p>I highly recommend him for his technical expertise, his autonomy and his ability to create a positive collaborative dynamic.</p>
+        </blockquote>
+        <figcaption>
+          <strong class="testimonial-author">Guillaume Lannez</strong>
+          <p class="testimonial-role" data-lang="fr">CTO @Theia · Mon responsable hiérarchique</p>
+          <p class="testimonial-role" data-lang="en">CTO @Theia · My direct manager</p>
+          <p class="testimonial-note" data-lang="en">English translation of the original French recommendation.</p>
+          <a class="testimonial-source" href="https://www.linkedin.com/in/kaky-jean-philippe-lachapelle/" target="_blank" rel="noopener noreferrer" data-lang="fr">Témoignage visible sur mon LinkedIn ↗</a>
+          <a class="testimonial-source" href="https://www.linkedin.com/in/kaky-jean-philippe-lachapelle/" target="_blank" rel="noopener noreferrer" data-lang="en">Recommendation available on my LinkedIn profile ↗</a>
+        </figcaption>
+      </figure>
     </section>
 
     <section class="edu">
